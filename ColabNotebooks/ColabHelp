@@ -1,0 +1,20 @@
+Go to https://colab.research.google.com
+File → New notebook in Drive: it creates a colab folder in your drive and upload it there
+create a folder for files and data called Collaborate
+Configure your colab:
+{
+mount google drive and authenticate to access files
+from google.colab import drive
+drive.mount("/content/gdrive")
+check the currect directory content
+! ls
+change directory to specific dir
+%cd gdrive/MyDrive/'Collaborate '
+install any package if missing
+! pip install <desired-python-library>
+add a file in the data folder to test the access.
+}
+
+to run any jupyter notebook int he colab, if it needs to access any data file : add the configuration code in the notebook 
+copy the data in the data folder created by you
+copy the jupyter notebooks in colab folder and run 

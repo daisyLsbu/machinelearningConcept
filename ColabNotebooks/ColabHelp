@@ -17,4 +17,5 @@ add a file in the data folder to test the access.
 
 to run any jupyter notebook int he colab, if it needs to access any data file : add the configuration code in the notebook 
 copy the data in the data folder created by you
-copy the jupyter notebooks in colab folder and run 
+To run any jupyter notebook -> goto file-> upload file -> browse file and upload
+or select from already uploaded files

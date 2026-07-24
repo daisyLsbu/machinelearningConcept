@@ -24,8 +24,6 @@ This repo is a set of self-contained tutorial notebooks, most of them built arou
 | `data/charscnn_jitter.pth` | Pre-trained/saved PyTorch model weights (character CNN) used by `Tutorial_09_2223.ipynb` | — |
 | `requirements.txt` | Full pinned dependency list (pip freeze) for the local venv these notebooks were developed with | — |
 
-> **Note:** `Tutorial 11.ipynb` in the repo root is currently a browser-saved HTML page (an accidental "Save As" of a VLE page), not a real notebook, and won't open in Jupyter/VS Code as-is. It's listed here for completeness but should be replaced with the actual notebook or removed.
-
 ## How to Start
 
 ### Prerequisites
@@ -66,6 +64,8 @@ Open the `.ipynb` file in VS Code or Jupyter and either:
 
 For the Colab-specific notebooks (`ColabNotebooks/ML-Tutorials1-6.ipynb`, `7`, `8`), open them in [Google Colab](https://colab.research.google.com) instead of running locally, since they mount Google Drive and expect a Colab runtime.
 
+## Note: update code to use cuda instead of cpu if you have the GPU available
+
 ## Notebook Details
 
 - **MachineLearningSelf.ipynb** — Foundational walkthrough of NumPy arrays, Pandas DataFrames, and loading a dataset into Scikit-learn.
@@ -93,7 +93,7 @@ machinelearningConcept/
 ├── Tutorial_09_2223.ipynb
 ├── Tutorial_10_2223.ipynb
 ├── Tutorial 12_2223.ipynb
-├── Tutorial 11.ipynb          # currently a broken/mis-saved file, see note above
+├── Tutorial 11.ipynb         
 ├── data/
 │   └── charscnn_jitter.pth
 └── ColabNotebooks/

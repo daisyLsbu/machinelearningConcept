@@ -19,3 +19,21 @@ to run any jupyter notebook int he colab, if it needs to access any data file : 
 copy the data in the data folder created by you
 To run any jupyter notebook -> goto file-> upload file -> browse file and upload
 or select from already uploaded files
+
+how to setup GPU in colab:
+1. Enable GPU for your notebook
+Go to Runtime → Change runtime type (in the top menu)
+Under Hardware accelerator, select GPU
+Click Save
+
+. Verify it's actually available in your code
+
+Before running any training, always check:
+
+python
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
+Use the safe device pattern
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
